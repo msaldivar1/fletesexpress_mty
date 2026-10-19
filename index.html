@@ -2,10 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FletesExpress MTY | Fletes Ligeros y Traslados Locales en Monterrey</title>
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -18,15 +17,15 @@
             }
         }
     </script>
-    <!-- FontAwesome Icons -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-brandDark text-slate-100 font-sans antialiased selection:bg-amber-400 selection:text-black min-h-screen">
+<body class="bg-brandDark text-slate-100 font-sans antialiased selection:bg-amber-400 selection:text-black">
 
     <!-- Header con Glassmorphism -->
-    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10">
+    <header class="sticky top-0 z-50 bg-slate-950/70 backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
+            <!-- Brand Logo con Gradiente -->
             <div class="flex items-center gap-3">
                 <div class="bg-gradient-to-br from-amber-400 via-red-500 to-blue-600 p-0.5 rounded-xl">
                     <div class="bg-slate-950 px-3 py-1.5 rounded-[10px]">
@@ -38,24 +37,24 @@
             </div>
 
             <!-- Botón WhatsApp Header -->
-            <a href="https://wa.me/528182806318?text=Hola,%20me%20interesa%20cotizar%20un%20flete%20en%20FletesExpress%20MTY" 
+            <a href="https://wa.me/528182806318?text=Hola,%20me%20interesa%20cotizar%20un%20servicio%20de%20flete%20en%20FletesExpress%20MTY" 
                target="_blank"
                class="bg-gradient-to-r from-amber-400 via-amber-500 to-red-500 hover:brightness-110 text-slate-950 font-black px-5 py-2.5 rounded-full text-sm transition-all shadow-lg shadow-amber-500/20 flex items-center gap-2">
-                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <i class="fa-brands fa-whatsapp text-lg text-slate-950"></i>
                 <span>Cotizar por WhatsApp</span>
             </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative py-12 lg:py-16 overflow-hidden">
-        <!-- Luces de Fondo -->
+    <!-- Hero Section con Fondos Gradientes -->
+    <section class="relative py-12 lg:py-20 overflow-hidden">
+        <!-- Luces / Gradientes de fondo con blur -->
         <div class="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-10 right-0 w-96 h-96 bg-red-600/20 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 items-center relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center relative z-10">
             
-            <!-- Columna Texto -->
+            <!-- Columna Texto e Impacto -->
             <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-blue-500/30 text-blue-400 text-xs font-semibold tracking-wider uppercase backdrop-blur-sm">
                     <i class="fa-solid fa-truck-pickup text-amber-400"></i> Servicio de Unidad Ligera
@@ -65,10 +64,11 @@
                     Fletes ligeros y traslados directos con <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-red-500 to-blue-500">precio cerrado al instante</span>
                 </h1>
 
-                <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
-                    Transporte rápido de cajas, electrodomésticos, muebles, herramientas y carga comercial en Monterrey y área metropolitana. Atención inmediata y trato directo.
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal">
+                    Transporte rápido de cajas, electrodomésticos, muebles, herramientas y carga comercial pequeña en Monterrey y área metropolitana. Atención inmediata y trato directo.
                 </p>
 
+                <!-- Badges con Gradiente Bordes -->
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-sm font-medium">
                     <div class="bg-slate-900/60 border border-white/10 p-3 rounded-xl backdrop-blur-sm text-slate-200 flex items-center justify-center lg:justify-start gap-2">
                         <i class="fa-solid fa-shield-halved text-amber-400"></i> Carga Segura
@@ -76,156 +76,4 @@
                     <div class="bg-slate-900/60 border border-white/10 p-3 rounded-xl backdrop-blur-sm text-slate-200 flex items-center justify-center lg:justify-start gap-2">
                         <i class="fa-solid fa-bolt text-red-500"></i> Salida Inmediata
                     </div>
-                    <div class="bg-slate-900/60 border border-white/10 p-3 rounded-xl backdrop-blur-sm text-slate-200 flex items-center justify-center lg:justify-start gap-2">
-                        <i class="fa-solid fa-file-invoice-dollar text-blue-400"></i> Tarifa Fija
-                    </div>
-                </div>
-
-                <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="https://wa.me/528182806318?text=Hola,%20quisiera%20cotizar%20un%20flete" 
-                       target="_blank"
-                       class="bg-gradient-to-r from-red-600 via-red-500 to-amber-500 hover:brightness-110 text-white font-black text-lg px-8 py-4 rounded-xl transition-all shadow-xl shadow-red-600/30 flex items-center justify-center gap-3">
-                        <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        Cotizar por WhatsApp
-                    </a>
-                </div>
-            </div>
-
-            <!-- Formulario Cotizador -->
-            <div class="lg:col-span-5 bg-slate-900/90 border border-white/10 p-6 sm:p-8 rounded-2xl shadow-2xl backdrop-blur-md relative">
-                <div class="absolute -top-3 left-6 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
-                    Cotizador Express
-                </div>
-
-                <h3 class="text-xl font-bold text-white mb-1">Dinos qué vas a mover</h3>
-                <p class="text-slate-400 text-sm mb-6">Te enviamos el costo exacto por WhatsApp.</p>
-
-                <form id="quoteForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Tu Nombre</label>
-                        <input type="text" id="nombre" required placeholder="Ej. Carlos Martínez" 
-                               class="w-full bg-slate-950/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400">
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">¿Qué cosas vas a trasladar?</label>
-                        <textarea id="detalle" rows="3" required placeholder="Ej. Refrigerador, lavadora y 5 cajas..." 
-                                  class="w-full bg-slate-950/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"></textarea>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-3">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Origen</label>
-                            <input type="text" id="origen" required placeholder="Ej. Apodaca" 
-                                   class="w-full bg-slate-950/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Destino</label>
-                            <input type="text" id="destino" required placeholder="Ej. San Pedro" 
-                                   class="w-full bg-slate-950/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400">
-                        </div>
-                    </div>
-
-                    <button type="submit" 
-                            class="w-full bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:brightness-105 text-slate-950 font-black text-base py-3.5 rounded-xl transition-all shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2 mt-4">
-                        <i class="fa-brands fa-whatsapp text-lg"></i>
-                        Enviar Flete por WhatsApp
-                    </button>
-                </form>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Sección Dimensiones y Capacidad con Imagen Directa y Tranki -->
-    <section class="py-12 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-10">
-                <h2 class="text-3xl font-black text-white tracking-tight">Capacidad y Dimensiones de la Batea</h2>
-                <p class="text-slate-400 mt-2">Especificaciones reales de la unidad para calcular el volumen de tus pertenencias o mercancía.</p>
-            </div>
-
-            <!-- Tarjeta Contenedora Principal -->
-            <div class="bg-gradient-to-br from-slate-900/90 via-slate-900/60 to-slate-950/90 border border-white/10 rounded-3xl p-6 sm:p-8 backdrop-blur-xl shadow-2xl relative overflow-hidden">
-                <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
-                    
-                    <!-- Imagen de la Batea (Limpiecita, con bordes redondeados y marco sutil) -->
-                    <div class="lg:col-span-7 flex justify-center items-center bg-white rounded-2xl p-2 sm:p-4 shadow-xl">
-                        <img src="ram_700_batea.jpg" 
-                             alt="Dimensiones RAM 700 SLT Batea" 
-                             class="w-full h-auto max-h-[420px] object-contain rounded-xl">
-                    </div>
-
-                    <!-- Métricas y Resumen al Lado -->
-                    <div class="lg:col-span-5 space-y-6">
-                        <div>
-                            <span class="bg-amber-400/10 text-amber-400 border border-amber-400/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                RAM 700 SLT Regular Cab
-                            </span>
-                            <h3 class="text-2xl font-black text-white tracking-tight mt-3">
-                                Ficha Técnica de Área de Carga
-                            </h3>
-                        </div>
-
-                        <!-- Resumen en tarjetas pequeñas -->
-                        <div class="space-y-3">
-                            <div class="bg-slate-950/80 border border-slate-800 p-3.5 rounded-xl flex justify-between items-center">
-                                <span class="text-slate-400 text-sm font-medium"><i class="fa-solid fa-arrows-left-right text-amber-400 mr-2"></i> Largo Útil de Batea</span>
-                                <span class="text-white font-bold text-base">1,717 mm <span class="text-xs text-slate-400">(1.71 m)</span></span>
-                            </div>
-
-                            <div class="bg-slate-950/80 border border-slate-800 p-3.5 rounded-xl flex justify-between items-center">
-                                <span class="text-slate-400 text-sm font-medium"><i class="fa-solid fa-arrows-left-right-to-line text-blue-400 mr-2"></i> Ancho Total de Carga</span>
-                                <span class="text-white font-bold text-base">1,363 mm <span class="text-xs text-slate-400">(1.36 m)</span></span>
-                            </div>
-
-                            <div class="bg-slate-950/80 border border-slate-800 p-3.5 rounded-xl flex justify-between items-center">
-                                <span class="text-slate-400 text-sm font-medium"><i class="fa-solid fa-arrows-up-down text-red-400 mr-2"></i> Altura de Batea</span>
-                                <span class="text-white font-bold text-base">606 mm <span class="text-xs text-slate-400">(0.60 m)</span></span>
-                            </div>
-                        </div>
-
-                        <!-- Highlights de Capacidad y Peso -->
-                        <div class="grid grid-cols-2 gap-4 pt-2">
-                            <div class="bg-gradient-to-br from-amber-500/10 to-transparent border border-amber-500/20 p-4 rounded-2xl">
-                                <p class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Volumen Útil</p>
-                                <p class="text-2xl font-black text-white">1,354 <span class="text-xs text-slate-400 font-normal">Litros</span></p>
-                            </div>
-
-                            <div class="bg-gradient-to-br from-red-500/10 to-transparent border border-red-500/20 p-4 rounded-2xl">
-                                <p class="text-xs font-semibold text-red-400 uppercase tracking-wider mb-1">Capacidad Máx.</p>
-                                <p class="text-2xl font-black text-white">750 <span class="text-xs text-slate-400 font-normal">Kg</span></p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="border-t border-slate-800 py-8 bg-slate-950 text-center text-xs text-slate-500">
-        <p>© 2026 FletesExpress MTY. Todos los derechos reservados. Monterrey, N.L.</p>
-    </footer>
-
-    <!-- Script de WhatsApp -->
-    <script>
-        function sendToWhatsApp(e) {
-            e.preventDefault();
-            const nombre = document.getElementById('nombre').value;
-            const detalle = document.getElementById('detalle').value;
-            const origen = document.getElementById('origen').value;
-            const destino = document.getElementById('destino').value;
-
-            const phone = "528182806318";
-            const message = `*SOLICITUD DE COTIZACIÓN - FLETESEXPRESS MTY*%0A%0A*Nombre:* ${nombre}%0A*Carga:* ${detalle}%0A*Origen:* ${origen}%0A*Destino:* ${destino}`;
-
-            window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
-        }
-    </script>
-</body>
-</html>
+                    <div class="bg-slate-900/60 border
