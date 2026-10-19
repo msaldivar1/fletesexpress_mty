@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FletesExpress MTY | Fletes Ligeros y Traslados Locales en Monterrey</title>
+    <title>FletesExpress MTY | Fletes Ligeros y Traslados en Monterrey</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -11,69 +11,141 @@
             theme: {
                 extend: {
                     colors: {
-                        brandDark: '#0B0F17',
+                        brandYellow: '#FACC15',
+                        brandRed: '#DC2626',
+                        brandBlue: '#1D4ED8',
+                        brandDark: '#0F172A',
                     }
                 }
             }
         }
     </script>
-    <!-- FontAwesome -->
+    <!-- FontAwesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-brandDark text-slate-100 font-sans antialiased selection:bg-amber-400 selection:text-black">
+<body class="bg-brandDark text-slate-100 font-sans antialiased selection:bg-brandYellow selection:text-black">
 
-    <!-- Header con Glassmorphism -->
-    <header class="sticky top-0 z-50 bg-slate-950/70 backdrop-blur-md border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo con Gradiente -->
-            <div class="flex items-center gap-3">
-                <div class="bg-gradient-to-br from-amber-400 via-red-500 to-blue-600 p-0.5 rounded-xl">
-                    <div class="bg-slate-950 px-3 py-1.5 rounded-[10px]">
-                        <span class="font-black text-xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-red-500">FLETES</span>
-                        <span class="font-extrabold text-xl tracking-tight text-blue-400">EXPRESS</span>
-                    </div>
-                </div>
-                <span class="hidden sm:inline text-xs font-semibold tracking-widest text-slate-400 uppercase border-l border-slate-700 pl-3">Monterrey & ZMM</span>
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Logo / Marca -->
+            <div class="flex items-center gap-2">
+                <span class="bg-brandYellow text-slate-950 p-2 rounded-lg font-black text-xl tracking-wider uppercase">FLETES</span>
+                <span class="text-xl font-bold tracking-tight text-white">EXPRESS <span class="text-brandRed">MTY</span></span>
             </div>
 
             <!-- Botón WhatsApp Header -->
-            <a href="https://wa.me/528182806318?text=Hola,%20me%20interesa%20cotizar%20un%20servicio%20de%20flete%20en%20FletesExpress%20MTY" 
+            <a href="https://wa.me/528182806318?text=Hola,%20me%20interesa%20cotizar%20un%20flete%20en%20FletesExpress%20MTY" 
                target="_blank"
-               class="bg-gradient-to-r from-amber-400 via-amber-500 to-red-500 hover:brightness-110 text-slate-950 font-black px-5 py-2.5 rounded-full text-sm transition-all shadow-lg shadow-amber-500/20 flex items-center gap-2">
-                <i class="fa-brands fa-whatsapp text-lg text-slate-950"></i>
-                <span>Cotizar por WhatsApp</span>
+               class="bg-brandYellow hover:bg-yellow-400 text-slate-950 font-bold px-4 py-2 rounded-full text-sm transition-all flex items-center gap-2 shadow-lg shadow-yellow-500/20">
+                <i class="fa-brands font-black fa-whatsapp text-lg text-emerald-600"></i>
+                <span class="hidden sm:inline">Cotizar por WhatsApp</span>
             </a>
         </div>
     </header>
 
-    <!-- Hero Section con Fondos Gradientes -->
+    <!-- Hero Section -->
     <section class="relative py-12 lg:py-20 overflow-hidden">
-        <!-- Luces / Gradientes de fondo con blur -->
-        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-10 right-0 w-96 h-96 bg-red-600/20 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
             
             <!-- Columna Texto e Impacto -->
             <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-blue-500/30 text-blue-400 text-xs font-semibold tracking-wider uppercase backdrop-blur-sm">
-                    <i class="fa-solid fa-truck-pickup text-amber-400"></i> Servicio de Unidad Ligera
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brandBlue/20 border border-brandBlue text-blue-300 text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-truck-pickup"></i> Servicio Local en Unidad Ligera
                 </div>
 
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-                    Fletes ligeros y traslados directos con <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-red-500 to-blue-500">precio cerrado al instante</span>
+                    Dinos qué vas a mover y <span class="text-brandYellow">te damos precio cerrado</span> al instante.
                 </h1>
 
-                <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal">
-                    Transporte rápido de cajas, electrodomésticos, muebles, herramientas y carga comercial pequeña en Monterrey y área metropolitana. Atención inmediata y trato directo.
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
+                    Traslados rápidos, fletes ligeros, muebles, electrodomésticos y vueltas exprés en Monterrey y área metropolitana. Sin letras chiquitas.
                 </p>
 
-                <!-- Badges con Gradiente Bordes -->
+                <!-- Badges de confianza -->
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-sm font-medium">
-                    <div class="bg-slate-900/60 border border-white/10 p-3 rounded-xl backdrop-blur-sm text-slate-200 flex items-center justify-center lg:justify-start gap-2">
-                        <i class="fa-solid fa-shield-halved text-amber-400"></i> Carga Segura
+                    <div class="flex items-center justify-center lg:justify-start gap-2 text-slate-200">
+                        <i class="fa-solid fa-circle-check text-brandYellow"></i> Precio Cerrado
                     </div>
-                    <div class="bg-slate-900/60 border border-white/10 p-3 rounded-xl backdrop-blur-sm text-slate-200 flex items-center justify-center lg:justify-start gap-2">
-                        <i class="fa-solid fa-bolt text-red-500"></i> Salida Inmediata
+                    <div class="flex items-center justify-center lg:justify-start gap-2 text-slate-200">
+                        <i class="fa-solid fa-circle-check text-brandYellow"></i> Salida Inmediata
                     </div>
-                    <div class="bg-slate-900/60 border
+                    <div class="flex items-center justify-center lg:justify-start gap-2 text-slate-200">
+                        <i class="fa-solid fa-circle-check text-brandYellow"></i> Trato Directo
+                    </div>
+                </div>
+
+                <!-- CTA Principal -->
+                <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="https://wa.me/528182806318?text=Hola,%20me%20interesa%20cotizar%20un%20flete" 
+                       target="_blank"
+                       class="bg-brandRed hover:bg-red-700 text-white font-black text-lg px-8 py-4 rounded-xl transition-all shadow-lg shadow-red-600/30 flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        Cotizar por WhatsApp Ahora
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna Formulario Cotizador -->
+            <div class="lg:col-span-5 bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-2xl shadow-2xl relative">
+                <div class="absolute -top-3 left-6 bg-brandBlue text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Cotizador Rápido
+                </div>
+
+                <h3 class="text-xl font-bold text-white mb-2">O déjanos tus datos</h3>
+                <p class="text-slate-400 text-sm mb-6">Te contestamos por WhatsApp con el costo exacto.</p>
+
+                <form id="quoteForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Nombre</label>
+                        <input type="text" id="nombre" required placeholder="Ej. Carlos Martínez" 
+                               class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brandYellow">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">¿Qué vas a mover?</label>
+                        <textarea id="detalle" rows="3" required placeholder="Ej. Un refrigerador, una sala de 3 piezas y 4 cajas..." 
+                                  class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brandYellow"></textarea>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Punto A (Origen)</label>
+                            <input type="text" id="origen" required placeholder="Ej. Apodaca" 
+                                   class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brandYellow">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Punto B (Destino)</label>
+                            <input type="text" id="destino" required placeholder="Ej. San Pedro" 
+                                   class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brandYellow">
+                        </div>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-brandYellow hover:bg-yellow-400 text-slate-950 font-bold text-base py-3.5 rounded-lg transition-all flex items-center justify-center gap-2 mt-4">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        Enviar Cotización por WhatsApp
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Script de Integración a WhatsApp -->
+    <script>
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const detalle = document.getElementById('detalle').value;
+            const origen = document.getElementById('origen').value;
+            const destino = document.getElementById('destino').value;
+
+            const phone = "528182806318";
+            const message = `*SOLICITUD DE COTIZACIÓN - FLETESEXPRESS MTY*%0A%0A*Cliente:* ${nombre}%0A*Carga:* ${detalle}%0A*Origen:* ${origen}%0A*Destino:* ${destino}`;
+
+            window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
